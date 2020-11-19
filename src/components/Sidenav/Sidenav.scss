@@ -1,0 +1,37 @@
+@import "../../sass/base/fonts.scss";
+@import "../../sass/helpers/variables.scss";
+
+.sidenav-ul{
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    background: $black;
+    display: inline-block;
+    position: fixed;
+    top: 200px;
+    min-height: calc(100vh - 150px);
+
+    li{
+        list-style: none;
+    }
+
+    li a{
+        display: block;
+        padding: 20px 0 20px 50px;
+        font-family: $primaryFont;
+        font-size: 30px;
+        color: $white;
+
+        &:hover{
+            text-decoration: none;
+        }
+
+        &.active{
+            background: $white;
+            color: $black;
+            font-family: $primaryFontBold;
+            border: 3px solid #707070;
+        }
+    }
+    
+}

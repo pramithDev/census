@@ -1,0 +1,80 @@
+@import "../../sass/base/fonts.scss";
+@import "../../sass/helpers/variables.scss";
+@import "../../sass/helpers/mixins.scss";
+
+.home{
+    padding: 25px 40px;
+
+    h3{
+        margin: 0 0 0 50px;
+        font-family: $primaryFontBold;
+        font-size: 40px;
+        color: $red;
+
+        @include respond-to(desktop){
+            font-size: 30px;
+        }
+    }
+
+    h4{
+        font-family: $primaryFontSemibold;
+        font-size: 28px;
+        line-height: 37px;
+        color: $black;
+
+        @include respond-to(desktop){
+            font-size: 20px;
+        }
+    }
+
+    .instruction-list{
+        margin-top: 25px;
+        padding: 0 60px 0 90px;
+    }
+
+    ul { 
+        padding-left: 60px;
+        li{
+            font-family: $primaryFont;
+            font-size: 26px;
+            line-height: 35px;
+
+            @include respond-to(desktop){
+                font-size: 18px;
+            }
+        }
+    }
+
+    .btn-container{
+        text-align: center;
+    }
+
+    .start{
+        background: $black;
+        border-radius: 15px;
+        height: 76px;
+        font-family: $primaryFontBold;
+        font-size: 35px;
+        color: $white;
+        transition: all 0.4s ease-in-out;
+        padding: 6px 50px;
+        margin-top: 20px;
+
+        svg{
+            margin-right: 20px;
+
+            @include respond-to(desktop){
+                height: 25px;
+            }
+        }
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+        @include respond-to(desktop){
+            font-size: 20px;
+            height: 60px;
+        }
+    }
+}

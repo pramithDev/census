@@ -1,0 +1,65 @@
+@import "../../sass/base/fonts.scss";
+@import "../../sass/helpers/variables.scss";
+@import "../../sass/helpers/mixins.scss";
+
+header{
+    background: $black;
+    height: 125px;
+    padding: 22px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+
+    @include respond-to(slarge){
+        height: auto;
+    }
+
+    .logo-wrapper{
+        h1{
+            font-family: $mainLogoFont;
+            color: $white;
+            font-size: 35px;
+            line-height: 38px;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+
+            @include respond-to(slarge){
+                font-size: 32px;
+            }
+        }
+    }
+
+    .top-info{
+        p{
+            color: $white;
+            font-family: $primaryFont;
+            font-size: 25px;
+            line-height: 33px;
+            margin: 0;
+            text-align: center;
+
+            @include respond-to(slarge){
+                font-size: 23px;
+            }
+        }
+    }
+
+    .gov-info{
+        p{
+            color: $white;
+            font-family: $primaryFont;
+            font-size: 16px;
+            line-height: 21px;
+            margin: 0;
+            text-align: right;
+            opacity: 0.6;
+
+            @include respond-to(slarge){
+                font-size: 14px;
+            }
+        }
+    }
+}

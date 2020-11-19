@@ -1,0 +1,30 @@
+@import "../../sass/base/fonts.scss";
+@import "../../sass/helpers/variables.scss";
+
+.top-btns-wrapper{
+    padding: 12px 40px;
+    text-align: right;
+    background: $bgSide;
+    height: 75px;
+    position: fixed;
+    top: 125px;
+    z-index: 999;
+    width: 100%;
+    
+
+    .btn{
+        background: $white;
+        border-radius: 15px;
+        font-family: $primaryFontBold;
+        font-size: 26px;
+        line-height: 35px;
+        height: 50px;
+        text-transform: uppercase;
+        width: 190px;
+        margin-left: 15px;
+
+        &:hover{
+            background: #dae0e5;
+        }
+    }
+}
